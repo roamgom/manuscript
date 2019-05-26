@@ -17,7 +17,7 @@
       <div v-if="result && sentence">
         <span>{{result}} %</span>
         <br>
-        <iframe id="limer_html" v-bind:src="`http://45.76.218.208/limer_html?text=${sentence}`"></iframe>
+        <iframe id="limer_html" v-bind:src="`http://15.164.77.182/limer_html?text=${sentence}`"></iframe>
       </div>
     </div>
 
@@ -37,7 +37,7 @@ export default {
   methods: {
     async checkSlang(e) {
       e.preventDefault()
-      const res = await this.axios.get('http://45.76.218.208', {
+      const res = await this.axios.get('http://15.164.77.182', {
         params: {
           text: this.sentence
         }
